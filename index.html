@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQueryValidation</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center p-4">
+            <div class="col-md-6">
+                <div class="col-sm-12">
+                    <h2>Sign Up</h2>
+                </div>
+                <hr>
+                <div class="col-sm-12">
+                    <form>
+                        <div class="form-group">
+                            <label for="mail">Email *</label>
+                            <input type="email" id="mail" name="mail" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmMail">Confirm Email *</label>
+                            <input type="email" id="confirmMail" name="confirmMail" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password *</label>
+                            <input type="password" id="password" name="password" class="form-control"
+                                placeholder="Minimum 5 characters">
+                        </div>
+                        <div class="form-group">
+                            <label for="confirmPass">Confirm Password *</label>
+                            <input type="password" id="confirmPass" name="confirmPass" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <label>
+                                    <input id="agree" type="checkbox" name="agree"> * Yes, I agree to terms of
+                                    use.
+                                </label>
+                            </div>
+                        </div>
+                        <input type="submit" value="Send" class="btn btn-primary">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/script.js"></script>
+</body>
+</html>
